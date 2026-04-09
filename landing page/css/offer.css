@@ -1,0 +1,42 @@
+a { text-decoration: none; }
+
+    .offer-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #e8dece;
+      transition: 0.2s;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .offer-badge {
+      background: #c8941a;
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 4px 10px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      letter-spacing: .08em;
+    }
+
+    .offer-img {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f0e8da;
+    }
+
+    .offer-body {
+      padding: 1rem;
+    }
+
+    .offer-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }

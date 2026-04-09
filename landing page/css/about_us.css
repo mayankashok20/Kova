@@ -1,0 +1,86 @@
+:root {
+      --kova-dark: #2b1a10;
+      --kova-tan: #c8a97e;
+      --kova-cream: #f5efe6;
+      --kova-gold: #c8941a;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--kova-cream);
+      color: var(--kova-dark);
+    }
+
+    /* HERO */
+    .about-hero {
+      height: 60vh;
+      background: linear-gradient(rgba(43,26,16,0.6), rgba(43,26,16,0.8)),
+                  url('images/about_bg.jpeg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .about-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 4rem 0;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+
+    .section p {
+      color: #5a3e28;
+      line-height: 1.7;
+    }
+
+    /* IMAGE */
+    .about-img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* VALUES */
+    .value-box {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .value-box i {
+      font-size: 2rem;
+      color: var(--kova-gold);
+      margin-bottom: 10px;
+    }
+
+    /* CTA */
+    .cta {
+      background: var(--kova-dark);
+      color: #fff;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .btn-kova {
+      background: var(--kova-gold);
+      color: #fff;
+      padding: 0.7rem 1.8rem;
+      font-weight: 700;
+      border: none;
+      letter-spacing: 0.08em;
+    }
+
+    .btn-kova:hover {
+      background: #a87412;
+    }

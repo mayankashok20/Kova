@@ -1,0 +1,63 @@
+ :root {
+      --kova-dark: #2b1a10;
+      --kova-tan: #c8a97e;
+      --kova-cream: #f5efe6;
+      --kova-gold: #c8941a;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--kova-cream);
+    }
+
+    .profile-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--kova-tan);
+    }
+
+    .profile-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--kova-dark);
+    }
+
+    .profile-email {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--kova-dark);
+    }
+
+    .btn-kova {
+      background: var(--kova-dark);
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .btn-kova:hover {
+      background: var(--kova-gold);
+    }
+
+    .order-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 1rem;
+      background: #fafafa;
+    }

@@ -1,0 +1,85 @@
+:root {
+      --kova-dark: #2b1a10;
+      --kova-tan: #c8a97e;
+      --kova-cream: #f5efe6;
+      --kova-gold: #c8941a;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--kova-cream);
+      color: var(--kova-dark);
+    }
+
+    /* HERO */
+    .sub-hero {
+      height: 60vh;
+      background: linear-gradient(rgba(43,26,16,0.6), rgba(43,26,16,0.8)),
+                  url('images/bg.jpeg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .sub-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+    }
+
+    /* BENEFITS */
+    .benefits {
+      padding: 4rem 0;
+    }
+
+    .benefit-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: 0.2s;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .benefit-icon {
+      font-size: 2.5rem;
+      color: var(--kova-gold);
+      margin-bottom: 10px;
+    }
+
+    /* PLAN */
+    .plan {
+      background: var(--kova-dark);
+      color: #fff;
+      border-radius: 12px;
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .plan h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 1rem 0;
+    }
+
+    .btn-kova {
+      background: var(--kova-gold);
+      color: #fff;
+      padding: 0.7rem 2rem;
+      border: none;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .btn-kova:hover {
+      background: #a87412;
+    }

@@ -1,0 +1,410 @@
+    :root {
+      --kova-dark:   #2b1a10;
+      --kova-brown:  #3e2112;
+      --kova-tan:    #c8a97e;
+      --kova-cream:  #f5efe6;
+      --kova-light:  #faf6f0;
+      --kova-gold:   #c8941a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--kova-light);
+      color: #2b1a10;
+    }
+
+    /* ── NAVBAR ── */
+    .navbar {
+      background: var(--kova-cream);
+      border-bottom: 1px solid #e0d5c5;
+    }
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--kova-dark) !important;
+      letter-spacing: .04em;
+    }
+    .navbar-brand span { color: var(--kova-gold); }
+    .nav-link {
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--kova-dark) !important;
+    }
+    .nav-link:hover { color: var(--kova-gold) !important; }
+    .nav-icons a { color: var(--kova-dark); font-size: 1.2rem; margin-left: .7rem; }
+    .nav-icons a:hover { color: var(--kova-gold); }
+
+    /* ── HERO / PRODUCT ── */
+    .hero-section {
+      background: var(--kova-cream);
+      padding: 3.5rem 0 2.5rem;
+    }
+    .hero-badge {
+      background: var(--kova-dark);
+      color: #fff;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .25rem .65rem;
+      border-radius: 2px;
+      display: inline-block;
+      margin-bottom: .8rem;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: var(--kova-dark);
+      line-height: 1.2;
+    }
+    .stars { color: var(--kova-gold); font-size: 1.1rem; }
+    .hero-desc {
+      font-size: .92rem;
+      line-height: 1.7;
+      color: #5a3e28;
+      max-width: 480px;
+    }
+    .feature-pill {
+      background: #fff;
+      border: 1px solid #e0d5c5;
+      border-radius: 4px;
+      padding: .4rem .85rem;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--kova-dark);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .price-label {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--kova-dark);
+    }
+    .price-sub {
+      font-size: .75rem;
+      color: #8a6a50;
+    }
+    .btn-cart {
+      background: var(--kova-dark);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-size: .82rem;
+      padding: .7rem 1.6rem;
+      border: none;
+      border-radius: 3px;
+      transition: background .2s;
+    }
+    .btn-cart:hover { background: var(--kova-gold); color: #fff; }
+    .qty-btn {
+      background: transparent;
+      border: 1px solid #ccc;
+      width: 32px; height: 36px;
+      font-size: 1.1rem;
+      color: var(--kova-dark);
+    }
+    .qty-input {
+      width: 40px; height: 36px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-left: none; border-right: none;
+      font-size: .9rem;
+    }
+    .hero-img-wrap {
+      background: #e8dece;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 340px;
+    }
+    .hero-img-placeholder {
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 40% 35%, #c8a97e, #7a4e28);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 16px 40px rgba(0,0,0,.18);
+    }
+    .hero-img-placeholder span {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      font-size: 1.4rem;
+      font-style: italic;
+      letter-spacing: .04em;
+    }
+
+    /* ── ALSO AVAILABLE BANNER ── */
+    .available-banner {
+      background: var(--kova-brown);
+      color: #fff;
+      padding: 1rem 0;
+    }
+    .available-banner h6 {
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .platform-pill {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.25);
+      color: #fff;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      padding: .3rem .9rem;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    /* ── YOU'LL ALSO LOVE ── */
+    .love-section {
+      background: var(--kova-light);
+      padding: 4rem 0;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--kova-dark);
+      margin-bottom: 2rem;
+    }
+    .product-card {
+      width: 214px;
+      
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #e8dece;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .product-card:hover {
+      box-shadow: 0 8px 28px rgba(43,26,16,.12);
+      transform: translateY(-3px);
+    }
+    .product-img-wrap {
+      background: #f0e8da;
+      height: 180px;
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    .product-img-icon {
+      font-size: 3.5rem;
+      color: var(--kova-tan);
+    }
+    .product-tag {
+      position: absolute; top: 10px; left: 10px;
+      background: var(--kova-dark);
+      color: #fff;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .2rem .55rem;
+      border-radius: 2px;
+    }
+    .product-tag.ready { background: #7aab7a; }
+    .product-tag.instant { background: var(--kova-gold); }
+    .product-body {
+      background: var(--kova-tan);
+      padding: .9rem 1rem 1.1rem;
+    }
+    .product-body h6 {
+      font-family: 'Playfair Display', serif;
+      font-size: .95rem;
+      font-weight: 700;
+      color: var(--kova-dark);
+      margin-bottom: .3rem;
+    }
+    .product-body p {
+      font-size: .78rem;
+      color: #5a3a1a;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* ── SUBSCRIBE SECTION ── */
+    .subscribe-section {
+      background: var(--kova-dark);
+      color: #fff;
+      padding: 4.5rem 0;
+    }
+    .subscribe-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .subscribe-section p {
+      color: rgba(255,255,255,.75);
+      font-size: .92rem;
+      line-height: 1.7;
+      max-width: 380px;
+    }
+    .benefit-item {
+      display: flex; align-items: flex-start; gap: .6rem;
+      margin-bottom: .7rem;
+      font-size: .88rem;
+    }
+    .benefit-item i { color: var(--kova-gold); margin-top: 2px; }
+    .btn-subscribe {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,.6);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      font-size: .82rem;
+      padding: .7rem 1.8rem;
+      border-radius: 3px;
+      transition: all .2s;
+    }
+    .btn-subscribe:hover {
+      background: var(--kova-gold);
+      border-color: var(--kova-gold);
+      color: #fff;
+    }
+    .subscribe-img-wrap {
+      border-radius: 8px;
+      overflow: hidden;
+      min-height: 340px;
+      background: linear-gradient(135deg, #4a7c59 0%, #2d5a3a 50%, #1a3a25 100%);
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    .subscribe-img-overlay {
+      position: absolute; top: 16px; right: 16px;
+      background: rgba(255,255,255,.15);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 6px;
+      padding: .5rem 1rem;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: .9rem;
+    }
+    .bag-icon { font-size: 5rem; color: rgba(255,255,255,.3); }
+
+    /* ── FAQ ── */
+    .faq-section {
+      background: var(--kova-cream);
+      padding: 4.5rem 0;
+    }
+    .faq-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--kova-dark);
+      margin-bottom: 2.5rem;
+    }
+    .accordion-item {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #d8caba;
+    }
+    .accordion-button {
+      background: transparent;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: .92rem;
+      color: var(--kova-dark);
+      padding: 1.1rem 0;
+      box-shadow: none !important;
+    }
+    .accordion-button::after {
+      filter: sepia(1) saturate(2) hue-rotate(340deg);
+    }
+    .accordion-button:not(.collapsed) { color: var(--kova-gold); background: transparent; }
+    .accordion-body {
+      font-size: .88rem;
+      color: #5a3e28;
+      line-height: 1.7;
+      padding: 0 0 1.2rem;
+    }
+
+    /* ── BEAN DECORATION ── */
+    .bean-section {
+      background: var(--kova-cream);
+      padding: 2.5rem 0 1rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .bean-row {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem;
+      opacity: .18;
+    }
+    .bean-row span { font-size: 2rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--kova-dark);
+      color: rgba(255,255,255,.75);
+      padding: 3rem 0 1.5rem;
+    }
+    footer h6 {
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .78rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    footer a {
+      color: rgba(255,255,255,.6);
+      text-decoration: none;
+      font-size: .82rem;
+      display: block;
+      margin-bottom: .4rem;
+      transition: color .15s;
+    }
+    footer a:hover { color: var(--kova-gold); }
+    .footer-tagline {
+      font-size: .8rem;
+      color: rgba(255,255,255,.5);
+      line-height: 1.6;
+    }
+    .newsletter-input {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.25);
+      color: #fff;
+      padding: .5rem .9rem;
+      font-size: .82rem;
+      border-radius: 3px 0 0 3px;
+      flex: 1;
+    }
+    .newsletter-input::placeholder { color: rgba(255,255,255,.4); }
+    .newsletter-input:focus { outline: none; border-color: var(--kova-gold); }
+    .newsletter-btn {
+      background: var(--kova-gold);
+      border: none;
+      color: #fff;
+      padding: .5rem .9rem;
+      border-radius: 0 3px 3px 0;
+      font-size: .9rem;
+    }
+    .social-icon {
+      color: rgba(255,255,255,.6);
+      font-size: 1.1rem;
+      margin-right: .7rem;
+      transition: color .15s;
+    }
+    .social-icon:hover { color: var(--kova-gold); }
+    .footer-copy {
+      border-top: 1px solid rgba(255,255,255,.1);
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      font-size: .78rem;
+      color: rgba(255,255,255,.4);
+    }

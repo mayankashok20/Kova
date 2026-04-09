@@ -1,0 +1,79 @@
+:root {
+      --kova-dark: #2b1a10;
+      --kova-brown: #3e2112;
+      --kova-tan: #c8a97e;
+      --kova-cream: #f5efe6;
+      --kova-gold: #c8941a;
+    }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--kova-cream);
+      margin: 0;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(43,26,16,0.6), rgba(43,26,16,0.8)),
+                  url('images/bg.jpeg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      max-width: 500px;
+      margin: 15px auto;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .btn-kova {
+      background: var(--kova-gold);
+      color: #fff;
+      padding: 0.7rem 1.8rem;
+      font-weight: 700;
+      border: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .btn-kova:hover {
+      background: #a87412;
+    }
+
+    /* FEATURES */
+    .features {
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .feature-box {
+      padding: 1.5rem;
+    }
+
+    .feature-box i {
+      font-size: 2rem;
+      color: var(--kova-gold);
+      margin-bottom: 10px;
+    }
+
+    /* CTA */
+    .cta {
+      background: var(--kova-dark);
+      color: #fff;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: 'Playfair Display', serif;
+    }
